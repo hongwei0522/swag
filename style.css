@@ -1,0 +1,157 @@
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/assets/img/bk_2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-header {
+    display: none;
+}
+
+.container {
+    width: 425px;
+    padding: 64px 0px 65px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-slogan {
+    display: none;
+}
+
+.container-img {
+    position: relative;
+}
+.container-img-img {
+    width: 100%;
+    
+}
+.container-img-ladyyuan{
+    cursor: pointer;
+    position: absolute;
+    top: 73px;
+    right: 58px;
+    z-index: 10;
+}
+.container-img-vavababy{
+    cursor: pointer;
+    position: absolute;
+    bottom: 280px;
+    right: 45px;
+    z-index: 10;
+}
+.container-img-imkowan{
+    cursor: pointer;
+    position: absolute;
+    bottom: 45px;
+    left: 35px;
+    z-index: 10;
+}
+.container-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 206, 204, 0.504);
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+.container-button {
+    width: 230px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-button-prev {
+    cursor: pointer;
+}
+
+.container-button-next {
+    cursor: pointer;
+}
+
+.container-button-copy {
+    cursor: pointer;
+}
+
+.container-button-share {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        background-image: url("/assets/img/bk_3.png");
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .container-slogan {
+        display: block;
+        width: 50%;
+        position: absolute;
+        top: -1%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        background-image: url("/assets/img/index_bg.png");
+        justify-content: space-between;
+    }
+
+    .wrapper-header {
+        width: 100%;
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper-header-logo {
+        padding-left: 12.5px;
+        width: 78px;
+        height: 34px;
+    }
+
+    .wrapper-header-slogan {
+        padding-right: 12.5px;
+        width: 127px;
+        height: 36px;
+    }
+
+    .container {
+        width: 100%;
+        height: calc(100% - 61px - 48px);
+        padding: 0;
+    }
+
+    .container-slogan {
+        display: none;
+    }
+
+    .container-button {
+        margin-bottom: 24px;
+    }
+    .container-button-copy {
+        display: none;
+    }
+    .container-button-share {
+        display: block;
+        cursor: pointer;
+    }
+
+}
