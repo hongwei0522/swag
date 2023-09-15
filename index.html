@@ -4,17 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading</title>
+    <title>presidential-election</title>
     <link href="/reset.css" rel="stylesheet" type="text/css" />
     <link href="/index.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <a href="/start.html">
-        <div class="wrapper">
-            <div class="loading"></div>
+    <div class="wrapper">
+        <div class="wrapper-logo"></div>
+        <div class="container">
+            <div class="container-title">
+                <img src="/assets/img/index_title.png" alt="img_title" width="100%">
+            </div>
+            <div class="container-start">
+                <a href="./KMT.html">
+                    <div class="container-start-button"></div>
+                </a>
+            </div>
         </div>
-    </a>
+        <div class="wrapper-effects"></div>
+        <div class="wrapper-effects-mobile"></div>
+    </div>
 </body>
 
-</html>
+<script>
+    window.onload = function () {
+        setInterval(function () {
+            document.querySelector('wrapper-effects').style.animationPlayState = 'running';
+        }, 5000);
+        setInterval(function () {
+            document.querySelector('wrapper-effects-mobile').style.animationPlayState = 'running';
+        }, 5000);
+    }
+
+</script>

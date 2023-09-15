@@ -25,14 +25,14 @@
                 </a>
             </div>
             <div class="container-button">
-                <a href="/start.html">
-                    <img class="container-button-prev" src="/assets/icon/ic_prev.svg" alt="">
+                <a href="/index.html">
+                    <div class="container-button-prev"></div>
                 </a>
                 <a href="/DPP.html">
-                    <img class="container-button-next" src="/assets/icon/ic_next.svg" alt="">
+                    <div class="container-button-next"></div>
                 </a>
-                <img id="copyText" class="container-button-copy" src="/assets/icon/ic_share_desktop.svg" alt="">
-                <img id="shareClick" class="container-button-share" src="/assets/icon/ic_share.svg" alt="">
+                <div id="copyText" class="container-button-copy"></div>
+                <div id="shareClick" class="container-button-share"></div>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
 
 <script>
     document.getElementById('copyText').addEventListener('click', function () {
-        navigator.clipboard.writeText('https://swag.live?action=login&utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P2')
+        navigator.clipboard.writeText(location.href)
             .then(function () {
                 const overlay = document.getElementById('overlay');
                 overlay.style.opacity = '1';

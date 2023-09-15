@@ -21,27 +21,44 @@
                 <img class="container-img-img" src="/assets/img/p14.png" alt="">
                 <a
                     href="https://swag.live/user/5c60451bc9b53d0aacf1bd84/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
-                    <img class="container-img-ladyyuan" src="/assets/icon/ic_p14_ladyyuan.svg" alt="">
+                    <img class="container-img-ladyyuan" src="/assets/img/p14_ladyyuan.png" alt="">
                 </a>
                 <a
                     href="https://swag.live/user/5c9f47f30a9a30701764c0e8/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
-                    <img class="container-img-vavababy" src="/assets/icon/ic_p14_vavababy.svg" alt="">
+                    <img class="container-img-vavababy" src="/assets/img/p14_vavababy.png" alt="">
                 </a>
                 <a
                     href="https://swag.live/user/5c3b4a2a8ae2c900e342f585/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
-                    <img class="container-img-imkowan" src="/assets/icon/ic_p14_imkowan.svg" alt="">
+                    <img class="container-img-imkowan" src="/assets/img/p14_imkowan.png" alt="">
                 </a>
                 <div id="overlay" class="container-img-overlay"></div>
             </div>
+            <!-- <div class="container-img">
+                <img class="container-img-img" src="/assets/img/p14.png" alt="">
+                <a
+                    href="https://swag.live/user/5c60451bc9b53d0aacf1bd84/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
+                    <img class="container-img-ladyyuan" src="/assets/img/p14_ladyyuan.png" alt="">
+                </a>
+                <a
+                    href="https://swag.live/user/5c9f47f30a9a30701764c0e8/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
+                    <img class="container-img-vavababy" src="/assets/img/p14_vavababy.png" alt="">
+                </a>
+                <a
+                    href="https://swag.live/user/5c3b4a2a8ae2c900e342f585/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
+                    <img class="container-img-imkowan" src="/assets/img/p14_imkowan.png" alt="">
+                </a>
+                <img class="container-img-bg" src="/assets/img/p14.png" alt="container-img-bg">
+                <div id="overlay" class="container-img-overlay"></div>
+            </div> -->
             <div class="container-button">
                 <a href="/P13.html">
-                    <img class="container-button-prev" src="/assets/icon/ic_prev.svg" alt="">
+                    <div class="container-button-prev"></div>
                 </a>
                 <a href="/P15.html">
-                    <img class="container-button-next" src="/assets/icon/ic_next.svg" alt="">
+                    <div class="container-button-next"></div>
                 </a>
-                <img id="copyText" class="container-button-copy" src="/assets/icon/ic_share_desktop.svg" alt="">
-                <img id="shareClick" class="container-button-share" src="/assets/icon/ic_share.svg" alt="">
+                <div id="copyText" class="container-button-copy"></div>
+                <div id="shareClick" class="container-button-share"></div>
             </div>
         </div>
     </div>
@@ -51,7 +68,7 @@
 
 <script>
     document.getElementById('copyText').addEventListener('click', function () {
-        navigator.clipboard.writeText('https://swag.live/user/5c60451bc9b53d0aacf1bd84/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14')
+        navigator.clipboard.writeText(location.href)
             .then(function () {
                 const overlay = document.getElementById('overlay');
                 overlay.style.opacity = '1';

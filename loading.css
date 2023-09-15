@@ -1,0 +1,41 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/img/index_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    width: 180px;
+    height: 60px;
+    animation-name: loading;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+
+    0%,
+    100% {
+        background-image: url('/assets/icon/ic_kmt.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    33% {
+        background-image: url('/assets/icon/ic_dpp.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    66% {
+        background-image: url('/assets/icon/ic_tpp.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

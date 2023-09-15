@@ -15,7 +15,7 @@
 }
 
 .container {
-    width: 425px;
+    max-width: 425px;
     padding: 64px 0px 65px 0px;
     display: flex;
     flex-direction: column;
@@ -28,31 +28,38 @@
 
 .container-img {
     position: relative;
+    background: #FF018A;
 }
 .container-img-img {
     width: 100%;
-    
+    background: url(/assets/img/p14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index:1; 
 }
 .container-img-ladyyuan{
-    cursor: pointer;
+    width: 100%;
     position: absolute;
-    top: 73px;
-    right: 58px;
-    z-index: 10;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 3;
 }
+
 .container-img-vavababy{
     cursor: pointer;
     position: absolute;
-    bottom: 280px;
-    right: 45px;
-    z-index: 10;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
 }
 .container-img-imkowan{
     cursor: pointer;
     position: absolute;
-    bottom: 45px;
-    left: 35px;
-    z-index: 10;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2;
 }
 .container-img-overlay {
     position: absolute;
@@ -63,6 +70,7 @@
     background-color: rgba(23, 206, 204, 0.504);
     opacity: 0;
     transition: opacity 1s ease;
+    z-index: 10;
 }
 
 
@@ -74,15 +82,49 @@
 }
 
 .container-button-prev {
+    width: 42px; 
+    height: 42px; 
+    background-image: url('/assets/icon/ic_prev.svg'); 
+    background-size: cover; 
+    transition: background 0.3s;
     cursor: pointer;
+}
+.container-button-prev:hover {
+    background-image: url('/assets/icon/ic_prev_hover.svg'); 
 }
 
 .container-button-next {
+    width: 42px; 
+    height: 42px; 
+    background-image: url('/assets/icon/ic_next.svg'); 
+    background-size: cover; 
+    transition: background 0.3s;
     cursor: pointer;
 }
-
-.container-button-copy {
+.container-button-next:hover {
+    background-image: url('/assets/icon/ic_next_hover.svg'); 
+}
+.container-button-home{
+    width: 42px; 
+    height: 42px; 
+    background-image: url('/assets/icon/ic_home.svg'); 
+    background-size: cover; 
+    transition: background 0.3s;
     cursor: pointer;
+}
+.container-button-home:hover {
+    background-image: url('/assets/icon/ic_home_hover.svg'); 
+}
+.container-button-copy {
+    width: 42px; 
+    height: 42px; 
+    background-image: url('/assets/icon/ic_copy.svg'); 
+    background-size: cover; 
+    transition: background 0.3s;
+    cursor: pointer;
+}
+.container-button-copy:hover {
+    background-image: url('/assets/icon/ic_copy_hover.svg'); 
 }
 
 .container-button-share {
@@ -138,6 +180,18 @@
         height: calc(100% - 61px - 48px);
         padding: 0;
     }
+    .container-img-ladyyuan{
+        width: 85%;
+    }
+    
+    .container-img-vavababy{
+        width: 50%;
+
+    }
+    .container-img-imkowan{
+        width: 73%;
+
+    }
 
     .container-slogan {
         display: none;
@@ -151,7 +205,16 @@
     }
     .container-button-share {
         display: block;
+        width: 42px; 
+        height: 42px; 
+        background-image: url('/assets/icon/ic_share.svg'); 
+        background-size: cover; 
+        transition: background 0.3s;
         cursor: pointer;
+        cursor: pointer;
+    }
+    .container-button-share:hover {
+        background-image: url('/assets/icon/ic_share_hover.svg'); 
     }
 
 }
