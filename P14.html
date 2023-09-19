@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="loading-container" style="display: block;">
+        <iframe src="/loading.html" style="border: none; width: 100%; height: 100vh;" title="loading"></iframe>
+    </div>
+    <div id="wrapper" style="display: none;" class="wrapper">
         <div class="wrapper-header">
             <img class="wrapper-header-logo" src="/assets/icon/ic_logo_white.svg" alt="">
             <img class="wrapper-header-slogan" src="/assets/img/bk_title.png" alt="">
@@ -18,38 +21,24 @@
         <div class="container">
             <img class="container-slogan" src="/assets/img/bk_title.png" alt="">
             <div class="container-img">
-                <img class="container-img-img" src="/assets/img/p14.png" alt="">
-                <a
+                <img class="container-img-img-p14" src="/assets/img/p14.png" alt="">
+                <a target="_blank"
                     href="https://swag.live/user/5c60451bc9b53d0aacf1bd84/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
                     <img class="container-img-ladyyuan" src="/assets/img/p14_ladyyuan.png" alt="">
+                    <div id="overlay" class="container-img-overlay"></div>
                 </a>
-                <a
+                <a target="_blank"
                     href="https://swag.live/user/5c9f47f30a9a30701764c0e8/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
                     <img class="container-img-vavababy" src="/assets/img/p14_vavababy.png" alt="">
+                    <div id="overlay" class="container-img-overlay"></div>
                 </a>
-                <a
+                <a target="_blank"
                     href="https://swag.live/user/5c3b4a2a8ae2c900e342f585/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
                     <img class="container-img-imkowan" src="/assets/img/p14_imkowan.png" alt="">
+                    <div id="overlay" class="container-img-overlay"></div>
                 </a>
-                <div id="overlay" class="container-img-overlay"></div>
+
             </div>
-            <!-- <div class="container-img">
-                <img class="container-img-img" src="/assets/img/p14.png" alt="">
-                <a
-                    href="https://swag.live/user/5c60451bc9b53d0aacf1bd84/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
-                    <img class="container-img-ladyyuan" src="/assets/img/p14_ladyyuan.png" alt="">
-                </a>
-                <a
-                    href="https://swag.live/user/5c9f47f30a9a30701764c0e8/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
-                    <img class="container-img-vavababy" src="/assets/img/p14_vavababy.png" alt="">
-                </a>
-                <a
-                    href="https://swag.live/user/5c3b4a2a8ae2c900e342f585/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P14">
-                    <img class="container-img-imkowan" src="/assets/img/p14_imkowan.png" alt="">
-                </a>
-                <img class="container-img-bg" src="/assets/img/p14.png" alt="container-img-bg">
-                <div id="overlay" class="container-img-overlay"></div>
-            </div> -->
             <div class="container-button">
                 <a href="/P13.html">
                     <div class="container-button-prev"></div>
@@ -67,6 +56,14 @@
 </html>
 
 <script>
+    window.addEventListener('load', function () {
+        const loadingContainer = document.getElementById('loading-container');
+        const wrapper = document.getElementById('wrapper')
+        if (loadingContainer) {
+            loadingContainer.style.display = 'none';
+            wrapper.style.display = 'flex'
+        }
+    });
     document.getElementById('copyText').addEventListener('click', function () {
         navigator.clipboard.writeText(location.href)
             .then(function () {

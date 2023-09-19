@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="loading-container" style="display: block;">
+        <iframe src="/loading.html" style="border: none; width: 100%; height: 100vh;" title="loading"></iframe>
+    </div>
+    <div id="wrapper" style="display: none;" class="wrapper">
         <div class="wrapper-logo"></div>
         <div class="container">
             <div class="container-title">
@@ -28,6 +31,14 @@
 </body>
 
 <script>
+    window.addEventListener('load', function () {
+        const loadingContainer = document.getElementById('loading-container');
+        const wrapper = document.getElementById('wrapper')
+        if (loadingContainer) {
+            loadingContainer.style.display = 'none';
+            wrapper.style.display = 'flex'
+        }
+    });
     window.onload = function () {
         setInterval(function () {
             document.querySelector('wrapper-effects').style.animationPlayState = 'running';

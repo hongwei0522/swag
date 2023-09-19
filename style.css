@@ -28,37 +28,45 @@
 
 .container-img {
     position: relative;
-    background: #FF018A;
 }
 .container-img-img {
     width: 100%;
-    background: url(/assets/img/p14.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     z-index:1; 
 }
-.container-img-ladyyuan{
+.container-img-img-p14 {
     width: 100%;
+    background: url(/assets/img/p14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index:2; 
+}
+.container-img-ladyyuan{
+    width: 93%;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 19px;
+    left: 19px;
     cursor: pointer;
     z-index: 3;
 }
 
 .container-img-vavababy{
+    width: 50%;
     cursor: pointer;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 18px;
+    right: 16px;
     z-index: 2;
 }
 .container-img-imkowan{
+    width: 75%;
     cursor: pointer;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 18px;
+    left: 18px;
     z-index: 2;
 }
 .container-img-overlay {

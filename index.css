@@ -42,13 +42,13 @@
 .container-start-button{
     width: 483px; 
     height: 96px; 
-    background-image: url('/assets/img/index_start.png'); 
+    background-image: url('/assets/img/index_start.svg'); 
     background-size: cover; 
     transition: background 0.3s;
     cursor: pointer;
 }
 .container-start-button:hover{
-    background-image: url('/assets/img/index_start_hover.png'); 
+    background-image: url('/assets/img/index_start_hover.svg'); 
 }
 
 .wrapper-effects {
@@ -56,7 +56,7 @@
     height: 250px;
     margin: 0 auto;
     animation-name: effects;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 .wrapper-effects-mobile{
@@ -69,16 +69,21 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-    50% {
+    33% {
       background-image: url('/assets/img/index_effects_blue.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
-    100% {
+    66% {
       background-image: url('/assets/img/index_effects_white.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
+    100% {
+        background-image: url('/assets/img/index_effects_green.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
   }
   @keyframes effects-mobile {
     0% {
@@ -86,16 +91,21 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-    50% {
+    33% {
       background-image: url('/assets/img/index_effects_blue_mb.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
-    100% {
+    66% {
       background-image: url('/assets/img/index_effects_white_mb.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
+    100% {
+        background-image: url('/assets/img/index_effects_green_mb.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
   }
 @media screen and (max-width: 1024px){
     .wrapper {
@@ -116,6 +126,7 @@
         left: calc(100% - 88px - 12px);
     }
     .container-start {
+        margin:3%;
         max-width: 280px;
     }
     .container-start-button{
@@ -131,7 +142,7 @@
         width: 180px;
         height: 100%;
         animation-name: effects-mobile;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
     }
 }

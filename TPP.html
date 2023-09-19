@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="loading-container" style="display: block;">
+        <iframe src="/loading.html" style="border: none; width: 100%; height: 100vh;" title="loading"></iframe>
+    </div>
+    <div id="wrapper" style="display: none;" class="wrapper">
         <div class="wrapper-header">
             <img class="wrapper-header-logo" src="/assets/icon/ic_logo_white.svg" alt="">
             <img class="wrapper-header-slogan" src="/assets/img/bk_title.png" alt="">
@@ -18,7 +21,7 @@
         <div class="container">
             <img class="container-slogan" src="/assets/img/bk_title.png" alt="">
             <div class="container-img">
-                <a
+                <a target="_blank"
                     href="https://swag.live?action=login&utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P4">
                     <img class="container-img-img" src="/assets/img/TPP.png" alt="">
                     <div id="overlay" class="container-img-overlay"></div>
@@ -41,6 +44,14 @@
 </html>
 
 <script>
+    window.addEventListener('load', function () {
+        const loadingContainer = document.getElementById('loading-container');
+        const wrapper = document.getElementById('wrapper')
+        if (loadingContainer) {
+            loadingContainer.style.display = 'none';
+            wrapper.style.display = 'flex'
+        }
+    });
     document.getElementById('copyText').addEventListener('click', function () {
         navigator.clipboard.writeText(location.href)
             .then(function () {
