@@ -78,4 +78,13 @@
                 });
         }
     });
+    document.addEventListener('keydown', function (event) {
+        if (event.keyCode === 37) {
+            const prevButton = document.querySelector('.container-button-prev');
+            prevButton.click();
+        } else if (event.keyCode === 39) {
+            const nextButton = document.querySelector('.container-button-home');
+            nextButton.click();
+        }
+    });
 </script>

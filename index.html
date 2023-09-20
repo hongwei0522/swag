@@ -47,5 +47,11 @@
             document.querySelector('wrapper-effects-mobile').style.animationPlayState = 'running';
         }, 5000);
     }
+    document.addEventListener('keydown', function (event) {
+        if (event.keyCode === 13) {
+            const startButton = document.querySelector('.container-start-button');
+            startButton.click();
+        }
+    });
 
 </script>
