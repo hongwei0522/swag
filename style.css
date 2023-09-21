@@ -1,9 +1,17 @@
+* {
+    user-select: none; 
+    -webkit-tap-highlight-color: transparent;
+  }
+html,body{
+  webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
 .wrapper {
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-image: url("/assets/img/bk_2.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,15 +63,15 @@
     width: 50%;
     cursor: pointer;
     position: absolute;
-    bottom: 15px;
-    right: 11px;
+    bottom: 16px;
+    right: 14px;
 }
 .container-img-imkowan{
     width: 75%;
     cursor: pointer;
     position: absolute;
     bottom: 15px;
-    left: 12px;
+    left: 14px;
 }
 .container-img-overlay {
     position: absolute;
@@ -74,9 +82,18 @@
     background-color: rgba(23, 206, 204, 0.504);
     opacity: 0;
     transition: opacity 1s ease;
-    /* z-index: 10; */
+    z-index: 10;
 }
-
+.container-img-overlay-p14 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 206, 204, 0.504);
+    opacity: 0;
+    transition: opacity 1s ease;
+}
 
 .container-button {
     width: 230px;
@@ -138,6 +155,8 @@
 @media screen and (max-width: 1024px) {
     .wrapper {
         background-image: url("/assets/img/bk_3.png");
+        background-position: center;
+        padding-top: 20px;
     }
 
     .container {
@@ -155,8 +174,9 @@
 
 @media screen and (max-width: 768px) {
     .wrapper {
+        padding-top: 0;
         background-image: url("/assets/img/index_bg.png");
-        justify-content: space-between;
+        height: 100vh;
     }
 
     .wrapper-header {
@@ -182,12 +202,6 @@
     .container {
         width: 100%;
         padding: 0;
-    }
-    .container-img-img{
-        height: calc(100vh - 61px - 78px);
-    }
-    .container-img-img-p14 {
-        height: calc(100vh - 61px - 78px);
     }
     .container-img-ladyyuan{
         width: 85%;
@@ -227,4 +241,24 @@
         background-image: url('/assets/icon/ic_share_hover.svg'); 
     }
 
+}
+@media screen and (max-width: 375px) {
+    .container-img-img-p14{
+        height: calc(100vh - 61px - 78px);
+    }
+    .container-img-ladyyuan{
+        top: 11px;
+        left: 11px;
+    }
+    
+    .container-img-vavababy{
+       right: 10px;
+       bottom: 14px;
+
+    }
+    .container-img-imkowan{
+       left: 11px;
+       bottom: 13px;
+
+    }
 }
