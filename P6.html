@@ -23,7 +23,13 @@
             <div class="container-img">
                 <a target="_blank"
                     href="https://swag.live/search/flix?utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P6">
-                    <img class="container-img-img" src="/assets/img/p6.png" alt="">
+                    <picture class="container-img-img">
+                        <source srcset="
+                        /assets/img/p6.webp 1x,
+                        /assets/img/p6x2.webp 2x" />
+                        <img class="container-img-img" height="100%" width="100%" src="/assets/img/p6.png" alt="p6"
+                            loading="lazy" />
+                    </picture>
                     <div id="overlay" class="container-img-overlay"></div>
                 </a>
             </div>
@@ -44,7 +50,7 @@
 </html>
 
 <script>
-    window.addEventListener('load', function () {
+    window.addEventListener('DOMContentLoaded', function () {
         const loadingContainer = document.getElementById('loading-container');
         const wrapper = document.getElementById('wrapper')
         if (loadingContainer) {

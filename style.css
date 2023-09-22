@@ -3,6 +3,10 @@
     min-height: 100vh;
     background-image: url("/assets/img/bk_2.png");
     background-repeat: no-repeat;
+<<<<<<< Updated upstream
+=======
+    /* background-size: cover; */
+>>>>>>> Stashed changes
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -23,7 +27,10 @@
 }
 
 .container-slogan {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 59%;
+    right: 2%;
 }
 
 .container-img {
@@ -46,8 +53,8 @@
 .container-img-ladyyuan{
     width: 93%;
     position: absolute;
-    top: 14px;
-    left: 14px;
+    top: 20px;
+    left: 20px;
     cursor: pointer;
 }
 
@@ -55,15 +62,34 @@
     width: 50%;
     cursor: pointer;
     position: absolute;
+<<<<<<< Updated upstream
     bottom: 15px;
     right: 11px;
+=======
+    bottom: 22px;
+    right: 20px;
+>>>>>>> Stashed changes
 }
-.container-img-imkowan{
-    width: 75%;
+.container-img-vavababy-click{
+    width: 45%;
+    height: 45%;
     cursor: pointer;
     position: absolute;
+<<<<<<< Updated upstream
     bottom: 15px;
     left: 12px;
+=======
+    bottom:30%;
+    right: 0px;
+    opacity: 0;
+}
+.container-img-imkowan{
+    width: 73%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 22px;
+    left: 20px;
+>>>>>>> Stashed changes
 }
 .container-img-overlay {
     position: absolute;
@@ -135,6 +161,23 @@
     display: none;
 }
 
+@media screen and (max-width: 1600px) {
+.container-slogan {
+    display: block;
+    position: absolute;
+    width: 400px;
+    top: 63%;
+    right: 2%;
+}
+@media screen and (max-width: 1360px) {
+    .container-slogan {
+        display: block;
+        position: absolute;
+        width: 280px;
+        top: 65%;
+        right: 2%;
+    }
+}
 @media screen and (max-width: 1024px) {
     .wrapper {
         background-image: url("/assets/img/bk_3.png");
@@ -156,7 +199,12 @@
 @media screen and (max-width: 768px) {
     .wrapper {
         background-image: url("/assets/img/index_bg.png");
+<<<<<<< Updated upstream
         justify-content: space-between;
+=======
+        height: 100vh;
+        justify-content: flex-start;
+>>>>>>> Stashed changes
     }
 
     .wrapper-header {
@@ -180,25 +228,37 @@
     }
 
     .container {
-        width: 100%;
+        width: 84%;
         padding: 0;
     }
     .container-img-img{
+<<<<<<< Updated upstream
         height: calc(100vh - 61px - 78px);
     }
     .container-img-img-p14 {
         height: calc(100vh - 61px - 78px);
     }
+=======
+    width: 100%;
+    }
+    
+>>>>>>> Stashed changes
     .container-img-ladyyuan{
         width: 85%;
+        top: 16px;
+        left: 16px;
     }
     
     .container-img-vavababy{
         width: 50%;
+        right: 17px;
+       bottom: 18px;
 
     }
     .container-img-imkowan{
         width: 73%;
+        left: 16px;
+       bottom: 18px;
 
     }
 
@@ -227,4 +287,27 @@
         background-image: url('/assets/icon/ic_share_hover.svg'); 
     }
 
+<<<<<<< Updated upstream
+=======
+}
+@media screen and (max-width: 375px) {
+    /* .container-img-img-p14{
+        height: calc(100vh - 61px - 78px);
+    } */
+    .container-img-ladyyuan{
+        top: 15px;
+        left: 15px;
+    }
+    
+    .container-img-vavababy{
+       right: 15px;
+       bottom: 17px;
+
+    }
+    .container-img-imkowan{
+       left: 15px;
+       bottom: 17px;
+
+    }
+>>>>>>> Stashed changes
 }

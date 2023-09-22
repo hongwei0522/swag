@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KMT</title>
     <link href="/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/loading.css" rel="stylesheet" type="text/css" />
     <link href="/style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -23,7 +24,13 @@
             <div class="container-img">
                 <a target="_blank"
                     href="https://swag.live?action=login&utm_source=election_survey&utm_campaign=2024_election&utm_medium=event_site&utm_term=P2">
-                    <img class="container-img-img" src="/assets/img/KMT.png" alt="">
+                    <picture class="container-img-img">
+                        <source srcset="
+                        /assets/img/KMT.webp 1x,
+                        /assets/img/KMTx2.webp 2x" />
+                        <img class="container-img-img" height="100%" width="100%" src="/assets/img/KMT.png" alt="KMT"
+                            loading="lazy" />
+                    </picture>
                     <div id="overlay" class="container-img-overlay"></div>
                 </a>
             </div>
@@ -44,7 +51,7 @@
 </html>
 
 <script>
-    window.addEventListener('load', function () {
+    window.addEventListener('DOMContentLoaded', function () {
         const loadingContainer = document.getElementById('loading-container');
         const wrapper = document.getElementById('wrapper')
         if (loadingContainer) {
