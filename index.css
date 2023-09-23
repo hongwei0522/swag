@@ -44,11 +44,14 @@
     height: 96px; 
     background-image: url('/assets/img/index_start.svg'); 
     background-size: cover; 
-    transition: background 0.3s;
+    /* transition: background 0.3s; */
     cursor: pointer;
 }
 .container-start-button:hover{
+    width: 483px; 
+    height: 96px; 
     background-image: url('/assets/img/index_start_hover.svg'); 
+    background-size: cover; 
 }
 
 .wrapper-effects {
@@ -132,6 +135,15 @@
     .container-start-button{
         width: 280px; 
         height: 55px; 
+        z-index: 10;
+    }
+    .container-start-button:hover{
+        width: 280px; 
+        height: 55px; 
+        background-image: url('/assets/img/index_start_hover.svg'); 
+        background-size: cover; 
+        z-index: 10;
+
     }
     .wrapper-effects{
         display:none;

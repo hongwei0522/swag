@@ -3,10 +3,7 @@
     min-height: 100vh;
     background-image: url("/assets/img/bk_2.png");
     background-repeat: no-repeat;
-<<<<<<< Updated upstream
-=======
     /* background-size: cover; */
->>>>>>> Stashed changes
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -40,7 +37,6 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     z-index:1; 
 }
 .container-img-img-p14 {
@@ -48,7 +44,6 @@
     background: url(/assets/img/p14.png);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 .container-img-ladyyuan{
     width: 93%;
@@ -62,23 +57,14 @@
     width: 50%;
     cursor: pointer;
     position: absolute;
-<<<<<<< Updated upstream
-    bottom: 15px;
-    right: 11px;
-=======
     bottom: 22px;
     right: 20px;
->>>>>>> Stashed changes
 }
 .container-img-vavababy-click{
     width: 45%;
     height: 45%;
     cursor: pointer;
     position: absolute;
-<<<<<<< Updated upstream
-    bottom: 15px;
-    left: 12px;
-=======
     bottom:30%;
     right: 0px;
     opacity: 0;
@@ -89,7 +75,16 @@
     position: absolute;
     bottom: 22px;
     left: 20px;
->>>>>>> Stashed changes
+}
+.container-img-overlay-p14 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 206, 204, 0.504);
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 .container-img-overlay {
     position: absolute;
@@ -100,7 +95,7 @@
     background-color: rgba(23, 206, 204, 0.504);
     opacity: 0;
     transition: opacity 1s ease;
-    /* z-index: 10; */
+    z-index: 10;
 }
 
 
@@ -116,11 +111,15 @@
     height: 42px; 
     background-image: url('/assets/icon/ic_prev.svg'); 
     background-size: cover; 
-    transition: background 0.3s;
     cursor: pointer;
+    z-index: 10;
 }
 .container-button-prev:hover {
+    width: 42px; 
+    height: 42px; 
     background-image: url('/assets/icon/ic_prev_hover.svg'); 
+    background-size: cover; 
+    z-index: 10;
 }
 
 .container-button-next {
@@ -128,33 +127,45 @@
     height: 42px; 
     background-image: url('/assets/icon/ic_next.svg'); 
     background-size: cover; 
-    transition: background 0.3s;
     cursor: pointer;
+    z-index: 10;
 }
 .container-button-next:hover {
+    width: 42px; 
+    height: 42px; 
     background-image: url('/assets/icon/ic_next_hover.svg'); 
+    background-size: cover; 
+    z-index: 10;
 }
 .container-button-home{
     width: 42px; 
     height: 42px; 
     background-image: url('/assets/icon/ic_home.svg'); 
     background-size: cover; 
-    transition: background 0.3s;
     cursor: pointer;
+    z-index: 10;
 }
 .container-button-home:hover {
+    width: 42px; 
+    height: 42px; 
     background-image: url('/assets/icon/ic_home_hover.svg'); 
+    background-size: cover; 
+    z-index: 10;
 }
 .container-button-copy {
     width: 42px; 
     height: 42px; 
     background-image: url('/assets/icon/ic_copy.svg'); 
     background-size: cover; 
-    transition: background 0.3s;
     cursor: pointer;
+    z-index: 10;
 }
 .container-button-copy:hover {
+    width: 42px; 
+    height: 42px; 
     background-image: url('/assets/icon/ic_copy_hover.svg'); 
+    background-size: cover; 
+    z-index: 10;
 }
 
 .container-button-share {
@@ -199,12 +210,8 @@
 @media screen and (max-width: 768px) {
     .wrapper {
         background-image: url("/assets/img/index_bg.png");
-<<<<<<< Updated upstream
-        justify-content: space-between;
-=======
         height: 100vh;
         justify-content: flex-start;
->>>>>>> Stashed changes
     }
 
     .wrapper-header {
@@ -232,17 +239,9 @@
         padding: 0;
     }
     .container-img-img{
-<<<<<<< Updated upstream
-        height: calc(100vh - 61px - 78px);
-    }
-    .container-img-img-p14 {
-        height: calc(100vh - 61px - 78px);
-    }
-=======
     width: 100%;
     }
     
->>>>>>> Stashed changes
     .container-img-ladyyuan{
         width: 85%;
         top: 16px;
@@ -279,16 +278,17 @@
         height: 42px; 
         background-image: url('/assets/icon/ic_share.svg'); 
         background-size: cover; 
-        transition: background 0.3s;
         cursor: pointer;
-        cursor: pointer;
+        z-index: 10;
     }
     .container-button-share:hover {
+        width: 42px; 
+        height: 42px; 
         background-image: url('/assets/icon/ic_share_hover.svg'); 
+        background-size: cover; 
+        z-index: 10;
     }
 
-<<<<<<< Updated upstream
-=======
 }
 @media screen and (max-width: 375px) {
     /* .container-img-img-p14{
@@ -309,5 +309,4 @@
        bottom: 17px;
 
     }
->>>>>>> Stashed changes
 }
