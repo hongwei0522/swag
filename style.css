@@ -24,9 +24,10 @@
 }
 
 .container-slogan {
+    width: 550px;
     display: block;
     position: absolute;
-    top: 59%;
+    top: 58.5%;
     right: 2%;
 }
 
@@ -177,7 +178,7 @@
     display: block;
     position: absolute;
     width: 400px;
-    top: 63%;
+    top: 62%;
     right: 2%;
 }
 @media screen and (max-width: 1360px) {
@@ -185,7 +186,7 @@
         display: block;
         position: absolute;
         width: 280px;
-        top: 65%;
+        top: 64.5%;
         right: 2%;
     }
 }
