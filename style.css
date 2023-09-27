@@ -235,7 +235,7 @@
     }
 
     .container {
-        /* width: 84%; */
+        width: 84%;
         padding: 0;
     }
     .container-img-img{
@@ -243,21 +243,21 @@
     }
     
     .container-img-ladyyuan{
-        width: 85%;
-        top: 14px;
-        left: 14px;
+        width: 90%;
+        top: 12px;
+        left: 12px;
     }
     
     .container-img-vavababy{
         width: 50%;
-        right: 13px;
-       bottom: 15px;
+        right: 11px;
+       bottom: 13px;
 
     }
     .container-img-imkowan{
         width: 73%;
-        left: 14px;
-       bottom: 15px;
+        left: 12px;
+       bottom: 13px;
 
     }
 
