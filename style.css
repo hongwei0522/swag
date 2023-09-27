@@ -49,8 +49,8 @@
 .container-img-ladyyuan{
     width: 93%;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 14px;
+    left: 14px;
     cursor: pointer;
 }
 
@@ -58,8 +58,8 @@
     width: 50%;
     cursor: pointer;
     position: absolute;
-    bottom: 22px;
-    right: 20px;
+    bottom: 16px;
+    right: 14px;
 }
 .container-img-vavababy-click{
     width: 45%;
@@ -74,8 +74,8 @@
     width: 73%;
     cursor: pointer;
     position: absolute;
-    bottom: 22px;
-    left: 20px;
+    bottom: 16px;
+    left: 14px;
 }
 .container-img-overlay-p14 {
     position: absolute;
@@ -232,11 +232,10 @@
     .wrapper-header-slogan {
         padding-right: 12.5px;
         width: 127px;
-        height: 36px;
     }
 
     .container {
-        width: 84%;
+        /* width: 84%; */
         padding: 0;
     }
     .container-img-img{
@@ -245,20 +244,20 @@
     
     .container-img-ladyyuan{
         width: 85%;
-        top: 16px;
-        left: 16px;
+        top: 14px;
+        left: 14px;
     }
     
     .container-img-vavababy{
         width: 50%;
-        right: 17px;
-       bottom: 18px;
+        right: 13px;
+       bottom: 15px;
 
     }
     .container-img-imkowan{
         width: 73%;
-        left: 16px;
-       bottom: 18px;
+        left: 14px;
+       bottom: 15px;
 
     }
 
@@ -292,22 +291,34 @@
 
 }
 @media screen and (max-width: 375px) {
-    /* .container-img-img-p14{
-        height: calc(100vh - 61px - 78px);
-    } */
+
+
+    .container {
+        /* height: calc(100vh - 72px - 78px); */
+        /* width: 7ß5%; */
+        padding: 0;
+    }
+    .container-img-img{
+        width: auto;
+        height: calc(100vh - 72px - 78px);
+    }
+    .container-img-img-p14{
+        width: auto;
+        height: calc(100vh - 72px - 78px);
+    }
     .container-img-ladyyuan{
-        top: 15px;
-        left: 15px;
+        top: 10px;
+        left: 10px;
     }
     
     .container-img-vavababy{
-       right: 15px;
-       bottom: 17px;
+       right: 10px;
+       bottom: 12px;
 
     }
     .container-img-imkowan{
-       left: 15px;
-       bottom: 17px;
+       left: 10px;
+       bottom: 12px;
 
     }
 }
