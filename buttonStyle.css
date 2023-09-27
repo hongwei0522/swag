@@ -1,0 +1,74 @@
+.container-button-prev {
+    width: 42px; 
+    height: 42px; 
+    background-image: url('/assets/icon/ic_prev.svg'); 
+    background-size: cover; 
+    cursor: pointer;
+    z-index: 10;
+}
+.container-button-next {
+    width: 42px; 
+    height: 42px; 
+    background-image: url('/assets/icon/ic_next.svg'); 
+    background-size: cover; 
+    cursor: pointer;
+    z-index: 10;
+}
+.container-button-home{
+    width: 42px; 
+    height: 42px; 
+    background-image: url('/assets/icon/ic_home.svg'); 
+    background-size: cover; 
+    cursor: pointer;
+    z-index: 10;
+}
+.container-button-share {
+    display: block;
+    width: 42px; 
+    height: 42px; 
+    background-image: url('/assets/icon/ic_share.svg'); 
+    background-size: cover; 
+    cursor: pointer;
+    z-index: 10;
+}
+@media screen and (min-width: 768px) {
+    .container-button-share {
+        display: none;
+    }
+    .container-button-copy {
+        width: 42px; 
+        height: 42px; 
+        background-image: url('/assets/icon/ic_copy.svg'); 
+        background-size: cover; 
+        cursor: pointer;
+        z-index: 10;
+    }
+    .container-button-prev:hover {
+        width: 42px; 
+        height: 42px; 
+        background-image: url('/assets/icon/ic_prev_hover.svg'); 
+        background-size: cover; 
+        z-index: 10;
+    }
+    .container-button-next:hover {
+        width: 42px; 
+        height: 42px; 
+        background-image: url('/assets/icon/ic_next_hover.svg'); 
+        background-size: cover; 
+        z-index: 10;
+    }
+    .container-button-home:hover {
+        width: 42px; 
+        height: 42px; 
+        background-image: url('/assets/icon/ic_home_hover.svg'); 
+        background-size: cover; 
+        z-index: 10;
+    } 
+    .container-button-copy:hover {
+        width: 42px; 
+        height: 42px; 
+        background-image: url('/assets/icon/ic_copy_hover.svg'); 
+        background-size: cover; 
+        z-index: 10;
+    }
+}

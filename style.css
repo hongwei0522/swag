@@ -107,67 +107,67 @@
     justify-content: space-between;
 }
 
-.container-button-prev {
+/* .container-button-prev {
     width: 42px; 
     height: 42px; 
     background-image: url('/assets/icon/ic_prev.svg'); 
     background-size: cover; 
     cursor: pointer;
     z-index: 10;
-}
-.container-button-prev:hover {
+} */
+/* .container-button-prev:hover {
     width: 42px; 
     height: 42px; 
     background-image: url('/assets/icon/ic_prev_hover.svg'); 
     background-size: cover; 
     z-index: 10;
-}
+} */
 
-.container-button-next {
+/* .container-button-next {
     width: 42px; 
     height: 42px; 
     background-image: url('/assets/icon/ic_next.svg'); 
     background-size: cover; 
     cursor: pointer;
     z-index: 10;
-}
-.container-button-next:hover {
+} */
+/* .container-button-next:hover {
     width: 42px; 
     height: 42px; 
     background-image: url('/assets/icon/ic_next_hover.svg'); 
     background-size: cover; 
     z-index: 10;
-}
-.container-button-home{
+} */
+/* .container-button-home{
     width: 42px; 
     height: 42px; 
     background-image: url('/assets/icon/ic_home.svg'); 
     background-size: cover; 
     cursor: pointer;
     z-index: 10;
-}
-.container-button-home:hover {
+} */
+/* .container-button-home:hover {
     width: 42px; 
     height: 42px; 
     background-image: url('/assets/icon/ic_home_hover.svg'); 
     background-size: cover; 
     z-index: 10;
-}
-.container-button-copy {
+} */
+/* .container-button-copy {
     width: 42px; 
     height: 42px; 
     background-image: url('/assets/icon/ic_copy.svg'); 
     background-size: cover; 
     cursor: pointer;
     z-index: 10;
-}
-.container-button-copy:hover {
+} */
+/* .container-button-copy:hover {
     width: 42px; 
     height: 42px; 
     background-image: url('/assets/icon/ic_copy_hover.svg'); 
     background-size: cover; 
     z-index: 10;
-}
+} */
 
 .container-button-share {
     display: none;
@@ -272,7 +272,16 @@
     .container-button-copy {
         display: none;
     }
-    .container-button-share {
+    /* .container-button-prev:hover {
+
+    }
+    .container-button-next:hover {
+
+    }
+    .container-button-home:hover {
+
+    } */
+    /* .container-button-share {
         display: block;
         width: 42px; 
         height: 42px; 
@@ -280,14 +289,10 @@
         background-size: cover; 
         cursor: pointer;
         z-index: 10;
-    }
-    .container-button-share:hover {
-        width: 42px; 
-        height: 42px; 
-        background-image: url('/assets/icon/ic_share_hover.svg'); 
-        background-size: cover; 
-        z-index: 10;
-    }
+    } */
+    /* .container-button-share:hover {
+
+    } */
 
 }
 @media screen and (max-width: 375px) {
@@ -321,4 +326,13 @@
        bottom: 12px;
 
     }
+    /* .container-button-prev:hover {
+
+    }
+    .container-button-next:hover {
+
+    }
+    .container-button-home:hover {
+
+    } */
 }
